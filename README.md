@@ -33,6 +33,8 @@
 - **수준 파악 및 동적 난이도 조절 규칙**:
   - 사용자의 문제 풀이 성공 여부, 이해도, 질문 내용, 소요 시간을 매번 분석하여 실시간 수준을 파악합니다.
   - 파악된 수준에 맞춰 다음 문제 난이도(Lv.1 기초 -> Lv.2 핵심 -> Lv.2 심화 -> Lv.3 진입)를 능동적으로 조절하여 제공합니다.
+- **Jupyter Notebook (.ipynb) 무결성 및 문법 검과 규칙**:
+  - `N일차.ipynb` 주피터 노트북 파일 생성 및 수정 시 반드시 JSON 규격(쌍따옴표, 쉼표 위치, source 줄바꿈 이스케이프 등)을 엄격히 준수하여 에디터 파싱 오류(`The editor could not be opened due to an unexpected error`)가 발생하지 않도록 사전 유효성 검사를 거칩니다.
 - **AI 행동 지침**:
   1. 답변 및 문제 추천 전 항상 이 README.md의 학습 레벨과 지침을 최우선으로 확인합니다.
   2. 문제 추천 시 단계적 성장을 위해 개념 설명, 힌트, 실수하기 쉬운 포인트 분석을 제공합니다.
@@ -66,10 +68,12 @@
   - 문제 2: 해시 - [의상 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
   - 문제 3: 해시 - [완주하지 못한 선수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
   - 문제 4: 해시 - [폰켓몬 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
-- **6일차 (오늘)**: 
+- **6일차**: 
   - 문제 1: 힙 - [더 맵다 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
   - 문제 2: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
   - 문제 3: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+- **7일차 (오늘)**: 
+  - 문제 1: 정렬 - [H-Index (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
 
 ### SQL 트랙
 - **1일차**: 
@@ -78,10 +82,12 @@
 - **2일차**: 
   - 문제 1: JOIN - [조건에 맞는 도서와 저자 리스트 출력하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
   - 문제 2: JOIN & GROUP BY - [성분으로 구분한 아이스크림 총 주문량 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/133026)
-- **3일차 (오늘)**: 
+- **3일차**: 
   - 문제 1: NULL 처리 - [NULL 처리하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59410)
   - 문제 2: GROUP BY & HAVING - [동명 동물 수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59041)
   - 문제 3: JOIN & DATETIME - [있었는데요 없었습니다 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
+- **4일차 (오늘)**: 
+  - 문제 1: JOIN & ORDER BY - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
 
 ---
 
