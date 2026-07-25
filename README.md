@@ -61,19 +61,27 @@
   - 문제 4: 스택/큐 - [다리를 지나는 트럭 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
   - 문제 5: 스택 - [짝지어 제거하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/12973)
   - 문제 6: 스택 - [괄호 회전하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/76502)
-- **5일차 (오늘)**: 
+- **5일차**: 
   - 문제 1: 해시 - [전화번호 목록 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42577)
   - 문제 2: 해시 - [의상 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
   - 문제 3: 해시 - [완주하지 못한 선수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
   - 문제 4: 해시 - [폰켓몬 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
+- **6일차 (오늘)**: 
+  - 문제 1: 힙 - [더 맵다 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
+  - 문제 2: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
+  - 문제 3: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
 
 ### SQL 트랙
 - **1일차**: 
   - 문제 1: GROUP BY & 날짜 - [자동차 평균 대여 기간 구하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/157345)
   - 문제 2: CASE WHEN & 날짜 - [조건에 부합하는 중고거래 상태 조회하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/164672)
-- **2일차 (오늘)**: 
+- **2일차**: 
   - 문제 1: JOIN - [조건에 맞는 도서와 저자 리스트 출력하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
   - 문제 2: JOIN & GROUP BY - [성분으로 구분한 아이스크림 총 주문량 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/133026)
+- **3일차 (오늘)**: 
+  - 문제 1: NULL 처리 - [NULL 처리하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59410)
+  - 문제 2: GROUP BY & HAVING - [동명 동물 수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59041)
+  - 문제 3: JOIN & DATETIME - [있었는데요 없었습니다 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
 
 ---
 
