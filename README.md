@@ -72,10 +72,14 @@
   - 문제 1: 힙 - [더 맵다 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
   - 문제 2: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
   - 문제 3: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
-- **7일차 (오늘)**: 
+- **7일차**: 
   - 문제 1: 정렬 - [H-Index (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
   - 문제 2: 완전탐색 - [최소직사각형 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/86549)
   - 문제 3: 완전탐색 - [카펫 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42842)
+- **8일차 (오늘)**: 
+  - 문제 1: 완전탐색 - [모의고사 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42840)
+  - 문제 2: 완전탐색 - [소수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42839)
+  - 문제 3: 탐욕법(Greedy) - [체육복 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
 
 ### SQL 트랙
 - **1일차**: 
@@ -88,8 +92,11 @@
   - 문제 1: NULL 처리 - [NULL 처리하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59410)
   - 문제 2: GROUP BY & HAVING - [동명 동물 수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59041)
   - 문제 3: JOIN & DATETIME - [있었는데요 없었습니다 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
-- **4일차 (오늘)**: 
+- **4일차**: 
   - 문제 1: JOIN & ORDER BY - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
+- **5일차 (오늘)**: 
+  - 문제 1: JOIN - [없어진 기록 찾기 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
+  - 문제 2: JOIN - [보호소에서 중성화한 동물 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59045)
 
 ---
 
