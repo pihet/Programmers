@@ -74,6 +74,8 @@
   - 문제 3: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
 - **7일차 (오늘)**: 
   - 문제 1: 정렬 - [H-Index (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
+  - 문제 2: 완전탐색 - [최소직사각형 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/86549)
+  - 문제 3: 완전탐색 - [카펫 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42842)
 
 ### SQL 트랙
 - **1일차**: 
