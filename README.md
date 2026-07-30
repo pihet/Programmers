@@ -7,14 +7,16 @@
 ## 최종 목표 (2달 커리큘럼)
 - **최종 목표**: 2달 이내 프로그래머스 Level 3 혼자 풀기 + Level 4 도전 가능 수준 도달 (Python 알고리즘 및 SQL 동시 진행)
 - **현재 수준**: 
-  - Python 알고리즘: Level 1 ~ Level 2 (스택/큐 진행 중)
-  - SQL: 과거 4단계까지 풀었으나 다수 망각, Lv.1~2 기초/약점 복습 후 Lv.4 재정복 예정
+  - Python 알고리즘: Level 1 ~ Level 2 (스택/큐, 탐욕법, 정렬 진행 중)
+  - SQL: Level 3 ~ Level 4 문제 집중 정복 진행 중
 
 ---
 
 ## 학습 가이드라인 & AI 멘토 규칙
 
 - **문제 출처**: 반드시 프로그래머스(Programmers)에 실제로 존재하는 문제로 추천 및 진행합니다.
+- **중복 문제 추천 금지 규칙**: 이미 풀었거나 README.md 학습 현황에 기록된 문제는 절대 다시 추천하지 않으며, 항상 이전에 다루지 않은 새로운 문제로만 구성하여 제공합니다.
+- **SQL 문제 난이도 규칙**: SQL 문제는 기본적으로 **Level 3 ~ Level 4 난이도**로 제공합니다.
 - **SQL 예시 테이블 및 결과 포함 규칙**:
   - SQL 문제를 제공하거나 노트북 노트를 세팅할 때, **지문 내에 예시로 제공되는 테이블 구조(컬럼 및 샘플 데이터)와 기대되는 최종 출력 결과 테이블**을 마크다운 표(Table) 형태로 반드시 수록합니다.
 - **정답 및 뼈대 코드 최소화 규칙 (학습 주도성 보장)**:
@@ -33,7 +35,7 @@
 - **수준 파악 및 동적 난이도 조절 규칙**:
   - 사용자의 문제 풀이 성공 여부, 이해도, 질문 내용, 소요 시간을 매번 분석하여 실시간 수준을 파악합니다.
   - 파악된 수준에 맞춰 다음 문제 난이도(Lv.1 기초 -> Lv.2 핵심 -> Lv.2 심화 -> Lv.3 진입)를 능동적으로 조절하여 제공합니다.
-- **Jupyter Notebook (.ipynb) 무결성 및 문법 검과 규칙**:
+- **Jupyter Notebook (.ipynb) 무결성 및 문법 검사 규칙**:
   - `N일차.ipynb` 주피터 노트북 파일 생성 및 수정 시 반드시 JSON 규격(쌍따옴표, 쉼표 위치, source 줄바꿈 이스케이프 등)을 엄격히 준수하여 에디터 파싱 오류(`The editor could not be opened due to an unexpected error`)가 발생하지 않도록 사전 유효성 검사를 거칩니다.
 - **AI 행동 지침**:
   1. 답변 및 문제 추천 전 항상 이 README.md의 학습 레벨과 지침을 최우선으로 확인합니다.
@@ -76,10 +78,18 @@
   - 문제 1: 정렬 - [H-Index (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
   - 문제 2: 완전탐색 - [최소직사각형 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/86549)
   - 문제 3: 완전탐색 - [카펫 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42842)
-- **8일차 (오늘)**: 
+- **8일차**: 
   - 문제 1: 완전탐색 - [모의고사 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42840)
   - 문제 2: 완전탐색 - [소수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42839)
   - 문제 3: 탐욕법(Greedy) - [체육복 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
+- **9일차**: 
+  - 문제 1: 탐욕법(Greedy) - [구명보트 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
+  - 문제 2: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
+  - 문제 3: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
+- **10일차 (오늘)**: 
+  - 문제 1: 탐욕법(Greedy) - [큰 수 만들기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
+  - 문제 2: 스택/큐 - [같은 숫자는 싫어 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
+  - 문제 3: 스택/큐 - [기능개발 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
 
 ### SQL 트랙
 - **1일차**: 
@@ -94,9 +104,16 @@
   - 문제 3: JOIN & DATETIME - [있었는데요 없었습니다 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
 - **4일차**: 
   - 문제 1: JOIN & ORDER BY - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
-- **5일차 (오늘)**: 
+- **5일차**: 
   - 문제 1: JOIN - [없어진 기록 찾기 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
   - 문제 2: JOIN - [보호소에서 중성화한 동물 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59045)
+- **6일차**: 
+  - 문제 1: JOIN - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
+  - 문제 2: GROUP BY - [즐겨찾기가 가장 많은 식당 정보 출력하기 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/131123)
+- **7일차 (오늘)**: 
+  - 문제 1: JOIN - [오랜 기간 보호한 동물(2) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59411)
+  - 문제 2: GROUP BY - [식품분류별 가장 높은 가격의 식품 정보 조회하기 (Lv.4)](https://school.programmers.co.kr/learn/courses/30/lessons/131116)
+  - 문제 3: String, Date - [취소되지 않은 진료 예약 조회하기 (Lv.4)](https://school.programmers.co.kr/learn/courses/30/lessons/132204)
 
 ---
 
