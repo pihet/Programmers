@@ -15,105 +15,80 @@
 ## 학습 가이드라인 & AI 멘토 규칙
 
 - **문제 출처**: 반드시 프로그래머스(Programmers)에 실제로 존재하는 문제로 추천 및 진행합니다.
+- **폴더 및 파일 저장 규칙**:
+  - Python: `python/N일차/N일차.ipynb` 및 `python/N일차/N일차_오답노트.md`
+  - SQL: `sql/N일차/N일차.ipynb` 및 `sql/N일차/N일차_오답노트.md`
 - **중복 문제 추천 금지 규칙**: 이미 풀었거나 README.md 학습 현황에 기록된 문제는 절대 다시 추천하지 않으며, 항상 이전에 다루지 않은 새로운 문제로만 구성하여 제공합니다.
 - **SQL 문제 난이도 규칙**: SQL 문제는 기본적으로 **Level 3 ~ Level 4 난이도**로 제공합니다.
-- **SQL 예시 테이블 및 결과 포함 규칙**:
-  - SQL 문제를 제공하거나 노트북 노트를 세팅할 때, **지문 내에 예시로 제공되는 테이블 구조(컬럼 및 샘플 데이터)와 기대되는 최종 출력 결과 테이블**을 마크다운 표(Table) 형태로 반드시 수록합니다.
-- **정답 및 뼈대 코드 최소화 규칙 (학습 주도성 보장)**:
-  - 문제를 제공할 때 스타터 코드는 오직 프로그래머스 웹사이트가 기본 제공하는 수준인 **기본 함수 껍데기(`def solution(...)`)와 기본 리턴문(`return answer`)**만 제공합니다. (SQL의 경우 `SELECT` 구문 하나만 제공)
-  - 내부 변수 선언, 루프 조건문 등의 코드는 절대 미리 작성해두지 않고 완전히 사용자가 빈 화면에서 짤 수 있도록 비워둡니다.
-  - 대신 구현할 수 있도록 세부 설계 과정, 단계별 의사코드(Pseudocode), 논리적 흐름도 힌트를 텍스트로 풍부하게 가이드합니다.
-- **입출력 예 설명 포함 규칙**:
-  - 문제를 추천하거나 노트북 노트를 생성할 때, 단순히 입출력 예시 값만 적지 않고 **입출력 예시에 대한 상세한 작동 흐름 설명**을 항상 누락 없이 함께 제공합니다.
-- **날짜 기반 N일차 생성 및 당일 문제 누적 규칙**:
-  - `N일차.ipynb` 파일은 실제 날짜(자정 00:00 KST) 기준으로 **하루에 1개만 사용**합니다.
-  - 동일한 날짜 내에서 추가 문제 요청 시 새 일차 파일(`N+1일차.ipynb`)을 생성하지 않고, **당일 전용 파일(`N일차.ipynb`) 내부 셀에 추가 문제(문제 2, 문제 3...)를 계속 이어붙여 세팅**합니다.
-  - 실제로 자정이 지나서 다음날이 되었을 때만 다음 일차 파일(`N+1일차.ipynb`)을 생성합니다.
-- **매일 오후 11:50 자동 Git Commit & Push 규칙**:
-  - 매일 오후 11:50(23:50 KST)에 `Programmers` 폴더 내 `python` 및 `sql` 학습 파일의 변경 사항을 확인하여 자동으로 GitHub에 푸시합니다.
-  - 커밋 메시지 양식: `YY.MM.DD_오늘핵심주제` (예: `26.07.22_스택큐_프로세스_주식가격_및_SQL_대여기간`)
-- **수준 파악 및 동적 난이도 조절 규칙**:
-  - 사용자의 문제 풀이 성공 여부, 이해도, 질문 내용, 소요 시간을 매번 분석하여 실시간 수준을 파악합니다.
-  - 파악된 수준에 맞춰 다음 문제 난이도(Lv.1 기초 -> Lv.2 핵심 -> Lv.2 심화 -> Lv.3 진입)를 능동적으로 조절하여 제공합니다.
-- **Jupyter Notebook (.ipynb) 무결성 및 문법 검사 규칙**:
-  - `N일차.ipynb` 주피터 노트북 파일 생성 및 수정 시 반드시 JSON 규격(쌍따옴표, 쉼표 위치, source 줄바꿈 이스케이프 등)을 엄격히 준수하여 에디터 파싱 오류(`The editor could not be opened due to an unexpected error`)가 발생하지 않도록 사전 유효성 검사를 거칩니다.
-- **AI 행동 지침**:
-  1. 답변 및 문제 추천 전 항상 이 README.md의 학습 레벨과 지침을 최우선으로 확인합니다.
-  2. 문제 추천 시 단계적 성장을 위해 개념 설명, 힌트, 실수하기 쉬운 포인트 분석을 제공합니다.
-  3. 풀이 완료 후 의미 있는 배운 점, 시공간 복잡도, 핵심 쿼리 패턴을 함께 기록합니다.
-  4. 답변 작성 시 이모티콘, 이모지, 아이콘 등의 특수 기호는 일절 사용하지 않습니다.
+- **SQL 예시 테이블 및 결과 포함 규칙**: 지문 내에 예시로 제공되는 테이블 구조(컬럼 및 샘플 데이터)와 기대되는 최종 출력 결과 테이블을 마크다운 표(Table) 형태로 반드시 수록합니다.
+- **정답 및 뼈대 코드 최소화 규칙**: 스타터 코드는 기본 함수 껍데기(`def solution(...)`, `SELECT`)만 제공하고 정답 코드는 작성해두지 않습니다.
+- **매일 오후 11:50 자동 Git Commit & Push 규칙**: 매일 오후 11:50(23:50 KST) 또는 사용자 요청 시 GitHub에 자동 푸시합니다.
 
 ---
 
-## 과거 SQL 학습 실수 및 약점 분석 노트 (복습용)
+## 프로그래머스 약점 및 복습용 종합 오답 노트 (지속 업데이트)
 
-1. **날짜 계산 (DATEDIFF)**: `DATEDIFF(END_DATE, START_DATE)` 시 시작일 포함을 위해 반드시 `+ 1` 처리할 것.
-2. **CASE WHEN 문법**: 조건 끝에 `END` 사용 필수, 컴마(`,`) 금지. 예외 조건(NULL 등)을 고려한 `ELSE` 또는 `IFNULL` 처리.
+### 📌 Python 알고리즘 복습 노트
+- **Python 9일차 2번 (K번째수)**:
+  - `list.append(a, b)`처럼 2개 이상의 인자를 전달하여 `TypeError` 발생 $\rightarrow$ 구하고자 하는 단일 값만 `append()`할 것.
+  - 1-based 인덱싱과 0-based 인덱싱 차이 (`i`번째 $\rightarrow$ `i-1` 인덱스) 유의.
+- **Python 9일차 3번 (가장 큰 수)**:
+  - 문자열 비교 시 자릿수가 다를 경우 단순 내림차순 정렬하면 오류 발생 (예: `'3'`과 `'30'`) $\rightarrow$ 문자열 3회 반복(`x * 3`) 비교 정렬 패턴 활용 (`'333'` > `'303030'`).
+  - `list.sort()`는 제자리 정렬로 `None`을 반환하므로 `"".join(list.sort())` 형태로 직접 사용 불가.
+- **Python 10일차 1번 (큰 수 만들기)**:
+  - `range(str_var)` 사용 시 `TypeError` 발생 $\rightarrow$ `for num in number:` 문자열 direct 순회 활용.
+  - `stack[0]`은 바닥 원소 $\rightarrow$ 스택 상단 비교 시 `stack[-1]` 활용.
+  - 다중 연속 제거 시 `if` 대신 `while stack and stack[-1] < num and k > 0:` 활용.
+  - 내림차순 등으로 `k`가 남아있을 경우 `stack[:-k]` 슬라이싱 예외 처리.
+- **Python 10일차 2번 (같은 숫자는 싫어)**:
+  - `set()` 적용 시 연속 중복이 아닌 전체 중복 제거 및 순서 파괴 발생 $\rightarrow$ `if not answer or answer[-1] != i` 단락 평가 `or` 조건문 활용.
+- **Python 10일차 3번 (기능개발)**:
+  - 날짜 계산 시 `round()` 반올림 사용 오류 $\rightarrow$ `math.ceil()` 올림 활용.
+  - `max_day` 기준일 및 `count` 변수를 활용한 그룹화 배포 조건 작성.
+
+---
+
+### 📌 SQL 트랙 복습 노트
+- **SQL 1일차**:
+  - `DATEDIFF` 시 시작일 포함을 위해 반드시 `+ 1` 처리할 것 (`DATEDIFF(END_DATE, START_DATE) + 1`).
+  - `CASE WHEN` 조건 끝에 `END` 사용 필수, 컴마(`,`) 금지.
+- **SQL 7일차 1번 (오랜 기간 보호한 동물(2))**:
+  - **`WHERE` 절 집계 함수 사용 불가**: `WHERE` 절에는 `MAX()` 같은 집계 함수를 쓸 수 없으며, 상위 N개 추출 시 `ORDER BY DATEDIFF(...) DESC LIMIT 2` 조합 활용할 것.
+  - **함수명 및 오타**: MySQL 날짜 일수 차이는 `DATE_DIFF`가 아닌 `DATEDIFF(종료일, 시작일)` 사용.
+  - **컬럼명 및 모호성**: 테이블의 이름 컬럼은 `ANIMAL_NAME`이 아니라 `NAME`이며, 다중 테이블 조인 시 `A.ANIMAL_ID` 처럼 테이블 별칭 필수 명시.
+  - **정렬 방향**: "가장 길었던" 조건은 오름차순(`ASC`)이 아닌 내림차순(`DESC`) 적용.
+- **SQL 7일차 2번 (식품분류별 가장 높은 가격의 식품 정보 조회하기)**:
+  - **`GROUP BY` 기준 오설정**: `PRODUCT_ID`로 그룹화 시 개별 행이 출력됨 $\rightarrow$ `CATEGORY`로 그룹화할 것.
+  - **그룹화 시 타 컬럼 불일치 (Lv.4 핵심)**: `GROUP BY CATEGORY`를 한 뒤 `PRODUCT_NAME`을 그냥 뽑으면 최고가 상품명이 아닌 임의의 상품명이 반환됨 $\rightarrow$ `WHERE (CATEGORY, PRICE) IN (서브쿼리)` 패턴 필수 적용.
+  - **문자열 조건 오타**: `IN ("'과자', '국'...")` 처럼 전체를 따옴표로 묶으면 1개의 단어로 인식됨 $\rightarrow$ `IN ('과자', '국', '김치', '식용유')` 개별 문자열 분리할 것.
+- **SQL 7일차 3번 (취소되지 않은 진료 예약 조회하기)**:
+  - **다중 테이블 조인 시 컬럼 모호성(Ambiguous)**: `PATIENT`, `APPOINTMENT`, `DOCTOR` 3개 테이블 조인 시 `PT_NO`, `MCDP_CD` 등 공통 컬럼은 `B.PT_NO`, `C.MCDP_CD` 처럼 테이블 별칭 필수 명시.
 
 ---
 
 ## 학습 현황
 
 ### Python 알고리즘 트랙
-- **1일차**: 데이터 처리 기초
-- **2일차**: 웹 크롤링 정리
-- **3일차**: 스택/큐 - [기능개발 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
-- **4일차**: 
-  - 문제 1: 스택/큐 - [프로세스 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42587)
-  - 문제 2: 스택/큐 - [주식가격 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42584)
-  - 문제 3: 스택/큐 - [올바른 괄호 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/12909)
-  - 문제 4: 스택/큐 - [다리를 지나는 트럭 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42583)
-  - 문제 5: 스택 - [짝지어 제거하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/12973)
-  - 문제 6: 스택 - [괄호 회전하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/76502)
-- **5일차**: 
-  - 문제 1: 해시 - [전화번호 목록 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42577)
-  - 문제 2: 해시 - [의상 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
-  - 문제 3: 해시 - [완주하지 못한 선수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42576)
-  - 문제 4: 해시 - [폰켓몬 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/1845)
-- **6일차**: 
-  - 문제 1: 힙 - [더 맵다 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42626)
-  - 문제 2: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
-  - 문제 3: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
-- **7일차**: 
-  - 문제 1: 정렬 - [H-Index (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42747)
-  - 문제 2: 완전탐색 - [최소직사각형 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/86549)
-  - 문제 3: 완전탐색 - [카펫 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42842)
-- **8일차**: 
-  - 문제 1: 완전탐색 - [모의고사 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42840)
-  - 문제 2: 완전탐색 - [소수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42839)
-  - 문제 3: 탐욕법(Greedy) - [체육복 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42862)
-- **9일차**: 
-  - 문제 1: 탐욕법(Greedy) - [구명보트 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42885)
-  - 문제 2: 정렬 - [K번째수 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/42748)
-  - 문제 3: 정렬 - [가장 큰 수 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42746)
-- **10일차 (오늘)**: 
-  - 문제 1: 탐욕법(Greedy) - [큰 수 만들기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42883)
-  - 문제 2: 스택/큐 - [같은 숫자는 싫어 (Lv.1)](https://school.programmers.co.kr/learn/courses/30/lessons/12906)
-  - 문제 3: 스택/큐 - [기능개발 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42586)
+- **[1일차](python/1일차/1일차.ipynb)**: 데이터 처리 기초 | [오답노트](python/1일차/1일차_오답노트.md)
+- **[2일차](python/2일차/2일차.ipynb)**: 웹 크롤링 정리 | [오답노트](python/2일차/2일차_오답노트.md)
+- **[3일차](python/3일차/3일차.ipynb)**: 스택/큐 - [기능개발 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/42586) | [오답노트](python/3일차/3일차_오답노트.md)
+- **[4일차](python/4일차/4일차.ipynb)**: 스택/큐 6문제 진행 | [오답노트](python/4일차/4일차_오답노트.md)
+- **[5일차](python/5일차/5일차.ipynb)**: 해시 4문제 진행 | [오답노트](python/5일차/5일차_오답노트.md)
+- **[6일차](python/6일차/6일차.ipynb)**: 힙/정렬 3문제 진행 | [오답노트](python/6일차/6일차_오답노트.md)
+- **[7일차](python/7일차/7일차.ipynb)**: 정렬/완전탐색 3문제 진행 | [오답노트](python/7일차/7일차_오답노트.md)
+- **[8일차](python/8일차/8일차.ipynb)**: 완전탐색/Greedy 3문제 진행 | [오답노트](python/8일차/8일차_오답노트.md)
+- **[9일차](python/9일차/9일차.ipynb)**: Greedy/정렬 3문제 진행 | [오답노트](python/9일차/9일차_오답노트.md)
+- **[10일차](python/10일차/10일차.ipynb)**: Greedy/스택큐 3문제 진행 (큰 수 만들기, 같은 숫자는 싫어, 기능개발) | [오답노트](python/10일차/10일차_오답노트.md)
 
 ### SQL 트랙
-- **1일차**: 
-  - 문제 1: GROUP BY & 날짜 - [자동차 평균 대여 기간 구하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/157345)
-  - 문제 2: CASE WHEN & 날짜 - [조건에 부합하는 중고거래 상태 조회하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/164672)
-- **2일차**: 
-  - 문제 1: JOIN - [조건에 맞는 도서와 저자 리스트 출력하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
-  - 문제 2: JOIN & GROUP BY - [성분으로 구분한 아이스크림 총 주문량 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/133026)
-- **3일차**: 
-  - 문제 1: NULL 처리 - [NULL 처리하기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59410)
-  - 문제 2: GROUP BY & HAVING - [동명 동물 수 찾기 (Lv.2)](https://school.programmers.co.kr/learn/courses/30/lessons/59041)
-  - 문제 3: JOIN & DATETIME - [있었는데요 없었습니다 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59043)
-- **4일차**: 
-  - 문제 1: JOIN & ORDER BY - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
-- **5일차**: 
-  - 문제 1: JOIN - [없어진 기록 찾기 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59042)
-  - 문제 2: JOIN - [보호소에서 중성화한 동물 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59045)
-- **6일차**: 
-  - 문제 1: JOIN - [오랜 기간 보호한 동물(1) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
-  - 문제 2: GROUP BY - [즐겨찾기가 가장 많은 식당 정보 출력하기 (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/131123)
-- **7일차 (오늘)**: 
-  - 문제 1: JOIN - [오랜 기간 보호한 동물(2) (Lv.3)](https://school.programmers.co.kr/learn/courses/30/lessons/59411)
-  - 문제 2: GROUP BY - [식품분류별 가장 높은 가격의 식품 정보 조회하기 (Lv.4)](https://school.programmers.co.kr/learn/courses/30/lessons/131116)
-  - 문제 3: String, Date - [취소되지 않은 진료 예약 조회하기 (Lv.4)](https://school.programmers.co.kr/learn/courses/30/lessons/132204)
+- **[1일차](sql/1일차/1일차.ipynb)**: GROUP BY & CASE WHEN 2문제 진행 | [오답노트](sql/1일차/1일차_오답노트.md)
+- **[2일차](sql/2일차/2일차.ipynb)**: JOIN 2문제 진행 | [오답노트](sql/2일차/2일차_오답노트.md)
+- **[3일차](sql/3일차/3일차.ipynb)**: NULL/GROUP BY 3문제 진행 | [오답노트](sql/3일차/3일차_오답노트.md)
+- **[4일차](sql/4일차/4일차.ipynb)**: JOIN 1문제 진행 | [오답노트](sql/4일차/4일차_오답노트.md)
+- **[5일차](sql/5일차/5일차.ipynb)**: JOIN 2문제 진행 | [오답노트](sql/5일차/5일차_오답노트.md)
+- **[6일차](sql/6일차/6일차.ipynb)**: JOIN/GROUP BY 2문제 진행 | [오답노트](sql/6일차/6일차_오답노트.md)
+- **[7일차](sql/7일차/7일차.ipynb)**: Lv.3~Lv.4 3문제 진행 (오랜 기간 보호한 동물(2), 식품분류별 가장 높은 가격, 취소되지 않은 진료 예약) | [오답노트](sql/7일차/7일차_오답노트.md)
+- **[기록장](sql/기록장/기록장.ipynb)**: 종합 SQL 연습장
 
 ---
 
